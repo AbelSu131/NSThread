@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<NSURLConnectionDelegate>
+@property (nonatomic) BOOL isLoaded;//标识加载状态
+@property (nonatomic) NSMutableData *bufferData;//用来接收网络数据
+
+
+
 
 
 @end
